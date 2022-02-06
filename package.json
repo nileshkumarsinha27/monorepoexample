@@ -1,0 +1,21 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "lerna": "^4.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "start": "lerna exec --scope @monorepo/app -- yarn start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "prettier": "^2.5.1"
+  }
+}
